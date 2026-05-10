@@ -1,0 +1,18 @@
+grid random 10 10
+
+player at 0 0
+
+enemy at 5 5 moves random
+
+wall at 3 3
+wall at 3 4
+
+goal at 9 9
+
+score +10 on reach goal
+
+score -5 on hit enemy
+
+rule:
+  if player == enemy -> lose
+  if player == goal -> win
